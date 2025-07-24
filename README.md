@@ -46,7 +46,7 @@ Open `src/App.jsx` and begin implementing the challenge.
 ## ✅ Challenge Requirements
 
 - [ ] Fetch data from https://jsonplaceholder.typicode.com/users
-- [ ] Display the list of users in a responsive layout
+- [ ] Display a table containing the name, username, email, and address of all users.
 - [ ] Include a search box to filter users by name
 - [ ] Add a button to sort users alphabetically
 - [ ] Use functional components and hooks (useState, useEffect)
