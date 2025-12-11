@@ -9,6 +9,8 @@ Build a full-stack application with a React frontend and Node.js/Express backend
 - Handle async operations across the stack
 - Write clean, maintainable code
 
+**Expected Time:** 60 minutes
+
 ## 🛠 Prerequisites
 **Make sure you have Node.js installed (v16 or later recommended).**
    You can check with:
@@ -107,19 +109,18 @@ Create an endpoint that fetches from JSONPlaceholder and returns the data:
 
 **Testing Your API:**
 ```bash
-# Test in browser
+# Test in browser - navigate to:
 http://localhost:5000/api/users
 
-# Or with curl
+# Or with curl:
 curl http://localhost:5000/api/users
 ```
 
-You should see the same user data from JSONPlaceholder.
+**Expected result:** You should see JSON data with 10 users from JSONPlaceholder (same data structure as the external API).
 
 ## Notes
 
 - Your backend acts as a proxy/middleman between frontend and JSONPlaceholder
-- Node.js has built-in `fetch()` in v18+, or you can install `node-fetch`
 - Use any styling method (inline styles, CSS, etc.)
 - Focus on making it work first, then refine
 - Add comments explaining key decisions
@@ -144,8 +145,9 @@ You should see the same user data from JSONPlaceholder.
 
 - **First**, test JSONPlaceholder directly: `https://jsonplaceholder.typicode.com/users`
 - **Start with the backend**: Create the endpoint that fetches from JSONPlaceholder
-- You can use `fetch()` or `node-fetch` in Node.js to make HTTP requests
-- Test your backend API in the browser before connecting the frontend
+- Node.js has built-in `fetch()` in v18+ (same syntax as browser fetch)
+- Test your backend API works before connecting the frontend (wait until you see "Server running...")
+- The `npm run dev` command starts both servers - give them a few seconds to initialize
 - Once the backend works, build the frontend to consume it
 - Handle edge cases (loading, errors from both your API and JSONPlaceholder)
 - Use `console.log` to debug
